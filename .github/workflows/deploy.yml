@@ -20,10 +20,7 @@ jobs:
 
           script: |
             set -e
-
             cd /var/www/yuchen-shi.com
-
             git fetch origin
             git reset --hard origin/main
-
             sudo systemctl reload nginx
