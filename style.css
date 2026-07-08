@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
+    min-height: 100vh;
 
 }
 
@@ -66,7 +67,9 @@ a{
     padding: 5px;
     font-size: 1.2rem;
     padding-left: 0;
-    width: 100px;
+    width: fit-content;
+    max-width: 100%;
+    line-height: 1.4;
 }
 /* animations / utilities */
 .section-2 a:hover{
@@ -80,6 +83,17 @@ a{
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.site-footer{
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer a:hover{
+    color: #fff;
+    transition: 0.2s;
 }
 
 .white:hover{
