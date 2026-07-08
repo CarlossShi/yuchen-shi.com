@@ -75,7 +75,7 @@ a:hover{
 .section-2 a{
     display: inline;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: inherit;
 }
 .site-footer{
     flex: 0 0 auto;
@@ -106,8 +106,7 @@ a:hover{
         font-size: 1.45rem;
     }
     .section-1 p,
-    .section-2 p,
-    .section-2 a{
+    .section-2 p{
         font-size: 1rem;
     }
     .section-1 a{
