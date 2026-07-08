@@ -4,6 +4,9 @@
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    flex: 1;
+    min-height: 0;
+    align-items: center;
 }
 
 body{
@@ -12,8 +15,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
-    min-height: 100vh;
-
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 h2,.white{
@@ -26,7 +31,7 @@ a{
 }
 /* section 1 */
 .section-1{
-    padding-top: 40vh;
+    padding-top: 0;
     text-align: center;
 }
 
@@ -47,7 +52,7 @@ a{
 }
 /* section 2 */
 .section-2{
-    padding-top: 10vh;
+    padding-top: 0;
     width: 70%;
 }
 
@@ -67,9 +72,7 @@ a{
     padding: 5px;
     font-size: 1.2rem;
     padding-left: 0;
-    width: fit-content;
-    max-width: 100%;
-    line-height: 1.4;
+    width: auto;
 }
 /* animations / utilities */
 .section-2 a:hover{
@@ -86,6 +89,9 @@ a{
 }
 
 .site-footer{
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
     padding: 2rem 1rem;
     text-align: center;
     font-size: 0.9rem;
@@ -105,14 +111,27 @@ a{
 @media(max-width:780px){
     .grid-2{
         grid-template-columns: 1fr;
+        align-content: center;
+        gap: 1.5rem;
     }
     .section-1{
         padding:0;
-        padding-top: 5rem;
     }
     .section-2{
         padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
+        width: calc(100% - 3rem);
+        margin: 0 auto;
+    }
+    .section-1 h2,
+    .section-2 h2{
+        font-size: 1.45rem;
+    }
+    .section-1 p,
+    .section-2 p,
+    .section-2 a{
+        font-size: 1rem;
+    }
+    .section-1 a{
+        font-size: 1.35rem;
     }
 }
