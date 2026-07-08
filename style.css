@@ -15,8 +15,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #b0a697;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +53,31 @@ a:hover{
 .section-1 a{
     font-size: 1.5rem;
     padding: 10px;
+}
+
+.link-groups{
+    margin-top: 1.75rem;
+}
+
+.link-group{
+    margin-top: 1.1rem;
+}
+
+.link-group:first-child{
+    margin-top: 0;
+}
+
+.section-1 .link-group-title{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+}
+
+.section-1 .link-group a{
+    display: inline-block;
+    font-size: 0.95rem;
+    padding: 0;
 }
 /* section 2 */
 .section-2{
@@ -111,5 +135,14 @@ a:hover{
     }
     .section-1 a{
         font-size: 1.35rem;
+    }
+    .link-groups{
+        margin-top: 1.25rem;
+    }
+    .link-group{
+        margin-top: 0.9rem;
+    }
+    .section-1 .link-group a{
+        font-size: 0.9rem;
     }
 }
