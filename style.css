@@ -102,12 +102,30 @@ a:hover{
     font-size: inherit;
 }
 .site-footer{
+    display: flex;
     flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     width: 100%;
     box-sizing: border-box;
     padding: 2rem 1rem;
     text-align: center;
     font-size: 0.9rem;
+}
+
+.filing-record{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.filing-record img{
+    width: auto;
+    height: 1.1em;
 }
 
 /* media queres */
